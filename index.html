@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel Example</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4734bc19b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- top section of the header -->
+      <div class="top-header inline-padding">
+        <div class="company-logo-sec">
+          <img
+            class="company-logo"
+            src="./public/company logo img.jpg"
+            alt=""
+          />
+          <div class="company-name">
+            <h4>AAFIYA</h4>
+            <h4>MEDIRETREATS</h4>
+            <p>healing Globally...</p>
+          </div>
+        </div>
+        <img
+          class="top-header-second-img"
+          src="./public/top header 2 img.jpg"
+          alt=""
+        />
+        <div class="contact-info-sec">
+          <div class="contact-info">
+            <i class="fa-solid fa-laptop"></i>
+            <div>
+              <p>Second Medical Opinion</p>
+              <h5>Book Consultaion</h5>
+            </div>
+          </div>
+          <div class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p>Call Us On</p>
+              <h5>9876543210</h5>
+            </div>
+          </div>
+          <div class="contact-info">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <p>Email Us On</p>
+              <h5>info@medirectreats.com</h5>
+            </div>
+          </div>
+        </div>
+        <div class="top-header-country-sec">
+          <!-- work later -->
+         <img src="./public/country flags/united states icon.png" width="50px" alt="">
+         <i class="fa-solid fa-chevron-down" style="margin-left: 8px; color: blue1;"></i>
+        </div>
+      </div>
+      <nav class="navbar inline-padding">
+        <div class="navbar-options">
+          <a href="#home">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#treatments">Treatments +</a>
+          <a href="#destinations">Destinations +</a>
+          <a href="#hospitals">Hospitals</a>
+          <a href="#FAQs">FAQs</a>
+          <a href="#blog">Blog</a>
+          <a href="#Request-A-Quote">Request A Quote</a>
+        </div>
+        <div class="nav-search">
+          <div class="nav-search-before">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search</p>
+          </div>
+          <input class="search hidden" type="text" />
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <section class="hero-section inline-padding">
+        <div class="hero-section-info">
+          <h5>
+            Home <i class="fa-solid fa-angle-right"></i> Treatmen
+            <i class="fa-solid fa-angle-right"></i> Orthopadics
+            <i class="fa-solid fa-angle-right"></i> Knee Replacment
+          </h5>
+          <h1>Total Knee Replacment</h1>
+          <p>
+            Total knee replacement is a surgery to remove and replace the whole
+            damaged knedd joint with a artifical joint
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">
+            Enquire Now
+          </button>
+        </div>
+      </section>
+      <nav class="main-nav-section inline-padding">
+        <div class="main-nav-options">
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#preparation">Preparation</a></li>
+            <li><a href="#about-treatment">About Treatment</a></li>
+            <li><a href="#post-treatment-Care">Post-Treatment Care</a></li>
+            <li><a href="#recovery-tips">Recovery Tips</a></li>
+            <li><a href="#FAQS">FAQS</a></li>
+            <li><a href="#patient-stories">Patient Stories</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- overview section -->
+      <section id="overview" class="main-section-page main-section-page-1">
+        <div>
+          <h3 class="mb-4">Treatment Overview</h3>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            voluptate incidunt, maxime, nostrum a adipisci eaque quas voluptatem
+            provident numquam corrupti eum laborum?
+          </p>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            veniam natus perferendis, ipsa fuga tempore modi nostrum cupiditate
+            aperiam reprehenderit nesciunt eos eius. Quibusdam possimus rem
+            quisquam itaque accusamus eligendi rerum consequuntur, molestias
+            minima vel adipisci iste doloribus necessitatibus aliquid.
+          </p>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            veniam natus perferendis, ipsa fuga tempore modi nostrum
+            cupiditaaliquid.
+          </p>
+        </div>
+        <img
+          class="main-section-page-1-img"
+          src="./public/page-1 image.jpg"
+          alt=""
+        />
+      </section>
+
+      <!-- eligibility section and other section -->
+      <section class="main-pages-section-form">
+        <div class="main-section-pages">
+          <div id="eligibility" class="main-section-page-2">
+            <h3 class="mb-4">Eligibility For Treatment</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              voluptate incidunt, maxime, nostrum a adipisci eaque quas
+              voluptatem Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Dolore, unde pariatur voluptatem voluptatibus blanditiis
+              reprehenderit architecto excepturi corrupti veniam facilis illum
+              repellat doloremque tenetur, vero alias iste tempora nobis
+              inventore? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Aspernatur harum repellendus at. Exercitationem, quis
+              expedita. Consectetur, obcaecati aut atque necessitatibus amet
+              fugiat doloremque quas libero tenetur enim, quibusdam odio
+              praesentium!
+            </p>
+            <p class="mb-4">
+              In general, gastric bypass could be a good option if:
+            </p>
+            <ul>
+              <li>The BMI (body mass index) is 40 or more</li>
+              <li>
+                Your BMI is 30 or more with server weight-related health
+                conditions like type-2 diabetes and hight blood pressure
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle
+              </li>
+            </ul>
+          </div>
+          <div id="preparation" class="main-section-page-2">
+            <h3 class="mb-4">Preparation Before Treatment</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              voluptate incidunt, maxime, nostrum a adipisci eaque quas
+              voluptatem Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Dolore, unde pariatur voluptatem voluptatibus blanditiis
+              reprehenderit architecto excepturi corrupti veniam facilis illum
+              repellat doloremque tenetur, vero alias iste tempora nobis
+              inventore? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Aspernatur harum repellendus at. Exercitationem, quis
+              expedita. Consectetur, obcaecati aut atque necessitatibus amet
+              fugiat doloremque quas libero tenetur enim, quibusdam odio
+              praesentium!
+            </p>
+            <p class="mb-4">
+              In general, gastric bypass could be a good option if:
+            </p>
+            <ul>
+              <li>The BMI (body mass index) is 40 or more</li>
+              <li>
+                Your BMI is 30 or more with server weight-related health
+                conditions like type-2 diabetes and hight blood pressure
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle
+              </li>
+            </ul>
+          </div>
+          <div id="about-treatment" class="main-section-page-2">
+            <h3 class="mb-4">About Treatment</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              voluptate incidunt, maxime, nostrum a adipisci eaque quas
+              voluptatem Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Dolore, unde pariatur voluptatem voluptatibus blanditiis
+              reprehenderit architecto excepturi corrupti veniam facilis illum
+              repellat doloremque tenetur, vero alias iste tempora nobis
+              inventore? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Aspernatur harum repellendus at. Exercitationem, quis
+              expedita. Consectetur, obcaecati aut atque necessitatibus amet
+              fugiat doloremque quas libero tenetur enim, quibusdam odio
+              praesentium!
+            </p>
+            <p class="mb-4">
+              In general, gastric bypass could be a good option if:
+            </p>
+            <ul>
+              <li>The BMI (body mass index) is 40 or more</li>
+              <li>
+                Your BMI is 30 or more with server weight-related health
+                conditions like type-2 diabetes and hight blood pressure
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle
+              </li>
+            </ul>
+          </div>
+          <div id="post-treatment-Care" class="main-section-page-2">
+            <h3 class="mb-4">Post-Treatment Care Treatment</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              voluptate incidunt, maxime, nostrum a adipisci eaque quas
+              voluptatem Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Dolore, unde pariatur voluptatem voluptatibus blanditiis
+              reprehenderit architecto excepturi corrupti veniam facilis illum
+              repellat doloremque tenetur, vero alias iste tempora nobis
+              inventore? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Aspernatur harum repellendus at. Exercitationem, quis
+              expedita. Consectetur, obcaecati aut atque necessitatibus amet
+              fugiat doloremque quas libero tenetur enim, quibusdam odio
+              praesentium!
+            </p>
+            <p class="mb-4">
+              In general, gastric bypass could be a good option if:
+            </p>
+            <ul>
+              <li>The BMI (body mass index) is 40 or more</li>
+              <li>
+                Your BMI is 30 or more with server weight-related health
+                conditions like type-2 diabetes and hight blood pressure
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle
+              </li>
+            </ul>
+          </div>
+          <div id="recovery-tips" class="main-section-page-2">
+            <h3 class="mb-4">Treatment Recovery Tips</h3>
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+              voluptate incidunt, maxime, nostrum a adipisci eaque quas
+              voluptatem Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Dolore, unde pariatur voluptatem voluptatibus blanditiis
+              reprehenderit architecto excepturi corrupti veniam facilis illum
+              repellat doloremque tenetur, vero alias iste tempora nobis
+              inventore? Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Aspernatur harum repellendus at. Exercitationem, quis
+              expedita. Consectetur, obcaecati aut atque necessitatibus amet
+              fugiat doloremque quas libero tenetur enim, quibusdam odio
+              praesentium!
+            </p>
+            <p class="mb-4">
+              In general, gastric bypass could be a good option if:
+            </p>
+            <ul>
+              <li>The BMI (body mass index) is 40 or more</li>
+              <li>
+                Your BMI is 30 or more with server weight-related health
+                conditions like type-2 diabetes and hight blood pressure
+              </li>
+              <li>
+                You are willing to make permanent changes in the lifestyle
+              </li>
+            </ul>
+          </div>
+          <!-- faqs section -->
+          <div id="FAQS" class="main-section-page-2 faqs-section">
+            <h3>Treatment FAQS.</h3>
+            <hr />
+            <div class="faqs-question-section">
+              <div class="faq-question">
+                <h6>
+                  <span>+</span> How do I know the clinic I am searching is
+                  verified?
+                </h6>
+                <p class="faq-question-ans hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  deleniti autem neque non provident corporis quidem atque nisi
+                  vel optio commodi temporibus porro rem dolore eveniet
+                  aspernatur, reprehenderit modi mollitia.
+                </p>
+              </div>
+              <div class="faq-question">
+                <h6>
+                  <span>+</span> I can't travel alone so can some family member
+                  or friend of mie accompany me?
+                </h6>
+                <p class="faq-question-ans hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  deleniti autem neque non provident corporis quidem atque nisi
+                  vel optio commodi temporibus porro rem dolore eveniet
+                  aspernatur, reprehenderit modi mollitia.
+                </p>
+              </div>
+              <div class="faq-question">
+                <h6>
+                  <span>+</span> Can I see my doctor before I decide and what
+                  about my post recovery?
+                </h6>
+                <p class="faq-question-ans hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  deleniti autem neque non provident corporis quidem atque nisi
+                  vel optio commodi temporibus porro rem dolore eveniet
+                  aspernatur, reprehenderit modi mollitia.
+                </p>
+              </div>
+              <div class="faq-question">
+                <h6>
+                  <span>+</span> How do I share my reposts and medical cases
+                  with the clinic of my choice?
+                </h6>
+                <p class="faq-question-ans hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+                  deleniti autem neque non provident corporis quidem atque nisi
+                  vel optio commodi temporibus porro rem dolore eveniet
+                  aspernatur, reprehenderit modi mollitia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- cards section -->
+          <div
+            id="patient-stories"
+            class="main-section-page-2 patient-stories-section"
+          >
+            <h3 class="mb-4">Patient Stories & Videos.</h3>
+            <div class="owl-carousel owl-theme cards-section">
+              <!-- first card -->
+              <div class="card item" style="width: 22rem; height: 24rem">
+                <div class="card-body">
+                  <div class="card-header-section">
+                    <h6>Underwent procedure for retianl detachment</h6>
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                  <img
+                    src="https://images.unsplash.com/photo-1606166228927-3feafb447265?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="card-footer-section">
+                    <img
+                      class="card-preson-image"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div>
+                      <h6>Luke Olfert</h6>
+                      <p>New York, USA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- second card -->
+              <div class="card item" style="width: 22rem; height: 24rem">
+                <div class="card-body">
+                  <div class="card-header-section">
+                    <h6>Underwent procedure for retianl detachment</h6>
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae earum adipisci recusandae doloribus. Unde repudiandae
+                    ducimus similique repellat architecto quod, rerum fuga,
+                    veritatis sunt beatae vitae odio laboriosam tenetur Lore
+                  </p>
+                  <div class="card-footer-section">
+                    <img
+                      class="card-preson-image"
+                      src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fHww"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div>
+                      <h6>Luke Olfert</h6>
+                      <p>New York, USA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- third card -->
+              <div class="card item" style="width: 22rem; height: 24rem">
+                <div class="card-body">
+                  <div class="card-header-section">
+                    <h6>Underwent procedure for retianl detachment</h6>
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1681996968232-3cd4e83e31e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFwcHklMjBwYXRpZW50fGVufDB8fDB8fHww"
+                    class="card-img-top"
+                    alt="..."
+                    loading="lazy"
+                  />
+                  <div class="card-footer-section">
+                    <img
+                      class="card-preson-image"
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div>
+                      <h6>Luke Olfert</h6>
+                      <p>New York, USA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fourth card -->
+              <div class="card item" style="width: 22rem; height: 24rem">
+                <div class="card-body">
+                  <div class="card-header-section">
+                    <h6>Underwent procedure for retianl detachment</h6>
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae earum adipisci recusandae doloribus. Unde repudiandae
+                    ducimus similique repellat architecto quod, rerum fuga,
+                    veritatis sunt beatae vitae odio laboriosam tenetur Lore
+                  </p>
+                  <div class="card-footer-section">
+                    <img
+                      class="card-preson-image"
+                      src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                      alt=""
+                      loading="lazy"
+                    />
+                    <div>
+                      <h6>Luke Olfert</h6>
+                      <p>New York, USA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sticky form section -->
+        <div class="form-section">
+          <h4><i>Need Help?</i></h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <form action="">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="FullName"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Email"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="4"
+                aria-label="With textarea"
+                placeholder="Describe Your Treatment Requirement"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- doctor section -->
+      <section class="doctor-section">
+        <div class="doctor-section">
+          <h4>
+            <i><span>Doctors</span></i>
+          </h4>
+          <h2>Top Orthopaedic <span>Doctors</span></h2>
+        </div>
+        <div class="owl-carousel owl-theme cards-section doctor-card-section">
+          <!-- first card -->
+          <div class="card doctorItem" style="width: 22rem; height: 24rem">
+            <div class="card-body doctor-card">
+              <img
+                src="https://images.unsplash.com/photo-1622475440551-6c9564685ea9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZG9jdG9yJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"
+                class="card-img-top"
+                alt="..."
+                loading="lazy"
+              />
+              <div class="card-footer-section">
+                <div>
+                  <h6><i>Luke Olfert</i></h6>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <p>Doctor Degree & Spacialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card doctorItem" style="width: 22rem; height: 24rem">
+            <div class="card-body doctor-card">
+              <img
+                src="https://media.istockphoto.com/id/1189304032/photo/doctor-holding-digital-tablet-at-meeting-room.webp?b=1&s=170667a&w=0&k=20&c=PD-dFPMSYvJ1OslKdz0Bx4i2a9V7AikiaS4GQi1x4ZY="
+                class="card-img-top"
+                alt="..."
+                loading="lazy"
+              />
+              <div class="card-footer-section">
+                <div>
+                  <h6><i>Luke Olfert</i></h6>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <p>Doctor Degree & Spacialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card doctorItem" style="width: 22rem; height: 24rem">
+            <div class="card-body doctor-card">
+              <img
+                src="https://media.istockphoto.com/id/1201439096/photo/male-medical-professional-is-confident-in-studio.webp?b=1&s=170667a&w=0&k=20&c=V8-WdYxanIaZzgDmw1w6qYK9ojHFsBfwOzlQb0drgTE="
+                class="card-img-top"
+                alt="..."
+                loading="lazy"
+              />
+              <div class="card-footer-section">
+                <div>
+                  <h6><i>Luke Olfert</i></h6>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <p>Doctor Degree & Spacialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="card doctorItem" style="width: 22rem; height: 24rem">
+            <div class="card-body doctor-card">
+              <img
+                src="https://media.istockphoto.com/id/1477483038/photo/doctors-nurse-or-laptop-in-night-healthcare-planning-research-or-surgery-teamwork-in-wellness.webp?b=1&s=170667a&w=0&k=20&c=pZ-HGH5Ri8gs9lXj6r1nuVIsO43cNa5Uh4zKb5CS52A="
+                class="card-img-top"
+                alt="..."
+                loading="lazy"
+              />
+              <div class="card-footer-section">
+                <div>
+                  <h6><i>Luke Olfert</i></h6>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <p>Doctor Degree & Spacialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hospital section -->
+      <section class="doctor-section hospital-section">
+        <div class="doctor-section hospital-section-header">
+          <h4>
+            <i><span>Hospitals</span></i>
+          </h4>
+          <h2>Recommended <span>Doctors</span></h2>
+        </div>
+        <div class="owl-carousel owl-theme cards-section doctor-card-section">
+          <!-- first card -->
+          <div
+            class="card doctorItem hospitalItem"
+            style="width: 22rem; height: 24rem"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9zcGl0YWwlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="..."
+              loading="lazy"
+            />
+            <div class="card-body doctor-card">
+              <div class="card-footer-section">
+                <div>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <h6><i>Luke Olfert</i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div
+            class="card doctorItem hospitalItem"
+            style="width: 22rem; height: 24rem"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1626315869436-d6781ba69d6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9zcGl0YWwlMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="..."
+              loading="lazy"
+            />
+            <div class="card-body doctor-card">
+              <div class="card-footer-section">
+                <div>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <h6><i>Luke Olfert</i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div
+            class="card doctorItem hospitalItem"
+            style="width: 22rem; height: 24rem"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1597807037496-c56a1d8bc29a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGhvc3BpdGFsJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top"
+              alt="..."
+              loading="lazy"
+            />
+            <div class="card-body doctor-card">
+              <div class="card-footer-section">
+                <div>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <h6><i>Luke Olfert</i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div
+            class="card doctorItem hospitalItem"
+            style="width: 22rem; height: 24rem"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG9zcGl0YWwlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="..."
+              loading="lazy"
+            />
+            <div class="card-body doctor-card">
+              <div class="card-footer-section">
+                <div>
+                  <h5>Masaffa Industrial - Abu Dhabi</h5>
+                  <h6><i>Luke Olfert</i></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6 class="mt-4">
+          Don't hesitate, contact us for better help and services.
+          <a class="red" href="_blank">Explore all Hospitals</a>
+        </h6>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top-section">
+        <h5>Stay healthy and srtong to enjoy life</h5>
+        <h1>We have team of healthcare experts</h1>
+        <div>
+          <button class="btn btn-primary">Get In Touch</button>
+          <h3 class="contact-number">+91 987 654 3210</h3>
+        </div>
+      </div>
+      <div class="footer-end-section inline-padding">
+        <div class="footer-end-card">
+          <div class="footer-card-heading">
+            <i class="fa-regular fa-address-card"></i>
+            <div>
+              <p>Are you Doctor/ hospital?</p>
+              <h5>Join Mediertreats</h5>
+            </div>
+          </div>
+          <p class="detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex animi
+            dolore atque a nisi quisquam nulla accusamus
+          </p>
+        </div>
+        <div class="footer-end-first-section">
+          <div>
+            <h5>Imortant Links</h5>
+            <ul>
+              <li><a href="">- Home</a></li>
+              <li><a href="">- About Us</a></li>
+              <li><a href="">- FAQs</a></li>
+              <li><a href="">- Blog</a></li>
+              <li><a href="">- Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Top Hospitals</h5>
+            <ul>
+              <li><a href="">- Apollo Hospital Delhi</a></li>
+              <li><a href="">- Medaate Hospital Gargoan</a></li>
+              <li><a href="">- Max Hospital Delhi</a></li>
+              <li><a href="">- Jaalok hoptial Mumbai</a></li>
+              <li><a href="">- altermis Hopital Gargaon</a></li>
+              <li><a href="">- fotal Hopital GArgaon</a></li>
+              <li><a href="">- View all</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>Specially Treatments</h5>
+            <ul>
+              <li><a href="">- Apollo Hospital Delhi</a></li>
+              <li><a href="">- Medaate Hospital Gargoan</a></li>
+              <li><a href="">- Max Hospital Delhi</a></li>
+              <li><a href="">- Jaalok hoptial Mumbai</a></li>
+              <li><a href="">- altermis Hopital Gargaon</a></li>
+              <li><a href="">- fotal Hopital GArgaon</a></li>
+              <li><a href="">- View all</a></li>
+            </ul>
+          </div>
+          <div class="medical-tourism">
+            <h5>Medical Tourism Destinations</h5>
+            <ul>
+              <li><a href="">-Mediacl Tourism in India</a></li>
+              <li><a href="">- Mediacl Tourism in Sri Lanka</a></li>
+              <li><a href="">- Mediacl Tourism in UAE</a></li>
+              <li><a href="">- View all</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-end-second-section">
+          <div class="footer-company-info-section">
+            <div class="footer-compony-name">
+              <img src="./public/company logo img.jpg" alt="" width="80px" />
+              <div class="company-name">
+                <h3 class="conpany-first-name">AAFIYA</h3>
+                <h3>MEDIRETREATS</h3>
+                <p>healing Globally...</p>
+              </div>
+            </div>
+            <div class="footer-abount-company">
+              <h3>About Aafiya Mediretreats</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+                ab quidem maiores quam ipsum, facilis exercitationem maxime ad!
+                Quibusdam labore velit voluptate error aliquid deleniti nam quia
+                et quas, corrupti quisquam dolor veritatis harum rerum est quo
+                provident explicabo dolorem assumenda natus animi! Nisi autem ex
+                eligendi qui tempore enim in recusandae soluta dolore maxime!
+              </p>
+            </div>
+            <div class="footer-contact-company">
+              <h4>Follow Us On</h4>
+              <div class="social-media-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <p>Customer Service</p>
+              <h3>+91 987 654 3210</h3>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright-section">
+        <div>
+          <span>Copyrights <i class="fa fa-copyright"></i> Aafiya Mediretreats. All Rights Reseaved. Designed by Ideamagix</span>
+        </div>
+        <div class="terms-conditioins">
+        <p>Tersm And Conditions </p>
+          <p>Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+</html>

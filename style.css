@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+--main-section-p-color: #737474;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* common styling */
+
+.hidden{
+  display: none;
+}
+
+.inline-padding{
+  padding-inline: 60px !important;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+
+
+/* Top header section */
+header{
+  width: 100%;
+}
+
+header .top-header p{
+  font-size: medium;
+}
+
+header p{
+  opacity: 0.7;
+}
+
+header .top-header{
+  display: flex;
+  padding-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .company-logo-sec{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header .company-logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+}
+
+header .company-name h4{
+  margin-top: 5px;
+  line-height:15px;
+  font-weight: 600;
+}
+
+header .top-header-second-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+header .contact-info-sec{
+  display:  flex;
+  gap: 30px;
+}
+
+header .contact-info-sec h4{
+  font-weight: 600;
+}
+
+header .contact-info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .contact-info i{
+  font-size: 2rem;
+}
+header .contact-info > div p{
+  margin-bottom: 5px;
+}
+
+.top-header-country-sec> select{
+  border: none;
+}
+
+/* NavBar section */
+
+header .navbar{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0%;
+  align-items: center;
+  height: 8vh;
+  background-color: rgb(148, 184, 246);
+}
+
+header .navbar-options{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  width: 80%;
+  
+}
+
+header .navbar ul{
+  display: flex;
+  /* gap: 70px; */
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+ a:hover{
+  color: rgb(88, 88, 210);
+  transition: all 0.2s linear;
+}
+
+header .navbar .nav-search{
+  border: none;
+  height: 100%;
+  background-color: rgb(85, 145, 240);
+  color: white;
+  outline: none;
+}
+
+header .navbar .search{
+  border: none;
+  height: 66px;
+  background-color: rgb(85, 145, 240);
+  color: white;
+  outline: none;
+  padding-inline: 10px;
+}
+
+header .navbar .nav-search-before{
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+  padding-inline: 10px;
+  
+}
+
+header .navbar .nav-search-before i{
+  font-size: 1.5rem;
+}
+
+header .navbar .nav-search-before p{
+  margin-top: 15px;
+  font-size: large;
+}
+
+/* hero section */
+
+main .hero-section{
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-image: url('./public/hero\ image\ kneep\ pain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+main .hero-section > div i{
+  color: rgb(250, 82, 82);
+}
+
+main .hero-section-info h1{
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+main .hero-section-info{
+  width: 40%;
+  line-height: 30px;
+}
+
+main .hero-section-info button{
+  border-radius: 0px ;
+  border: none;
+ margin-top: 10px;
+
+}
+
+/* main nav section */
+
+main .main-nav-section{
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 2px solid rgb(229, 228, 228);
+}
+
+
+
+main .main-nav-options ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+}
+
+
+main .main-nav-options a{
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+  color: #000;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+main .main-nav-options a:after{
+  content: "";
+  position: absolute;
+  background-color: #787af4;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -25px;
+  transition: 0.3s;
+}
+main .main-nav-options a:hover{
+  color: #676565;
+}
+main .main-nav-options a:hover:after{
+  width: 100%;
+}
+
+main .main-section-page{
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .main-section-page-1{
+  border-bottom: 2px dotted blue;
+
+}
+
+main .main-section-page p  {
+  color: var(--main-section-p-color);
+}
+
+main .main-section-page-1-img{
+  width: 45%;
+}
+
+/* About Treatments sections */
+
+main .main-pages-section-form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+main .main-pages-section-form h4{
+  columns: blue !important
+}
+
+
+main .main-pages-section-form .main-section-pages{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+main .main-section-page-2{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted blue;
+  padding: 10px 0px 20px 0px;
+}
+
+/* sticky form section */
+
+main .form-section {
+  position: sticky;
+  height: 470px;
+  width: 400px;
+  top: 30%;
+  padding: 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main .form-section h4{
+  color: blue;
+}
+
+
+main .main-section-page-2 ul{
+  list-style: circle inside none;
+}
+
+main .main-section-page-2 li{
+  margin-bottom: 10px;
+}
+
+
+/* faqs-section */
+
+main .faqs-question-section{
+  padding-bottom: 40px;
+}
+
+main .faq-question{
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+main .faqs-section hr{
+  margin-top: -10px;
+}
+
+main .faq-question h6{
+  padding-bottom: 20px;
+  border-bottom: 1px solid blue;
+}
+
+main .faq-question-ans{
+  margin: 10px 0px 0px 20px;
+  padding-left: 20px;
+  border-left: 2px solid blue;
+  font-size: small;
+}
+
+main .faq-question span{
+  color: blue;
+  font-size: 1rem;
+}
+
+/* patient stories section */
+
+main .patient-stories-section{
+  border: none;
+}
+
+main .patient-stories-section .card{
+  border-radius: 0px;
+}
+
+main .card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .card-header-section{
+  display: flex;
+
+}
+
+main .card-header-section i{
+  font-size: 2.5rem;
+}
+
+main .card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
+
+main .card-footer-section{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+main .card-footer-section .card-preson-image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main  .card-footer-section div{
+  line-height: 5px;
+}
+
+main .card-footer-section p{
+  font-size: small;
+}
+
+/* doctor section  */
+
+main .doctor-section{
+  background-color: #e9e9e9;
+  width: 100%;
+  margin: 50px auto;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main .doctor-section-heading{
+  text-align: center;
+}
+
+main  .doctor-card-section{
+  width: 80%;
+}
+
+main .doctor-card-section .card{
+  border-radius: 0%;
+}
+
+main .doctor-card{
+  display: flex;
+  gap: 40px;
+  border-radius: 0px;
+}
+
+main .doctor-card-section .card-footer-section div{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+main .doctor-card-section .card-footer-section h6{
+  color: red;
+}
+main .doctor-card-section .card-footer-section h5{
+  font-size: medium;
+}
+
+main .doctor-section h4 span{
+  color: red;
+}
+
+main .doctor-section h2 span{
+  color: blue;
+}
+
+/* hospital section */
+
+main .hospital-section,.hospital-section-header{
+  background-color: #fff !important;
+}
+
+main .hospital-section .card{
+  border:2px dotted red;
+  border-radius: 5px;
+}
+
+main .hospital-section .card img{
+  height: 280px;
+}
+
+main .hospital-section a{
+  text-decoration: underline;
+}
+
+footer .footer-top-section{
+  background-image: url('./public/hero\ image\ kneep\ pain.jpg');
+  text-align: center;
+  height: 40vh;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+footer .footer-top-section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footer-top-section .btn{
+  border-radius: 0px;
+}
+
+footer .contact-number{
+  border-left: 1px solid white;
+  padding: 8px ;
+}
+
+footer .footer-end-section{
+
+  background-image: url('https://img.freepik.com/free-photo/3d-neon-lights-background_23-2150710753.jpg?t=st=1716976648~exp=1716980248~hmac=9998a91108d31de31d244b32573cd4b5d173c1ac0193720f92893d7b10b5da8c&w=1380');
+  background-size: cover;
+  color: #fff;
+  height: 90vh;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+footer .footer-end-first-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom:2px solid #737474;
+}
+
+footer .footer-end-first-section ul{
+  list-style: none;
+  line-height: 35px;
+}
+
+footer .footer-end-card{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+  color: #000;
+  width: 350px;
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top: -40px;
+}
+
+footer .footer-card-heading{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footer-card-heading i{
+  font-size: 2rem;
+}
+
+footer .footer-card-heading div h5{
+  margin-top: -15px;
+}
+
+footer .footer-card-heading div p{
+  font-size: small;
+}
+
+footer .footer-end-card .detail{
+  font-size: x-small;
+}
+
+footer .footer-end-first-section .medical-tourism{
+  margin-top: 100px;
+}
+
+/* footer end second section */
+
+footer .footer-end-second-section{
+  padding: 80px 0px ;
+
+
+}
+
+footer .footer-company-info-section{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+footer .footer-abount-company{
+  width: 600px;
+}
+
+footer .company-name{
+  line-height: 1px;
+}
+
+footer .conpany-first-name{
+  margin-bottom: -5px;
+}
+
+footer .footer-compony-name{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .social-media-icon{
+  display: flex;
+  gap: 10px;
+  font-size: 1.7rem;
+  margin: 20px 0px;
+}
+
+footer .footer-contact-company h3{
+  margin-top: -10px;
+  color: rgb(140, 140, 255);
+}
+
+footer .footer-copyright-section{
+  background-color: rgb(140, 140, 255);
+  width: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+footer .terms-conditioins{
+  display: flex;
+  gap: 15px
+}
