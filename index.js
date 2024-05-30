@@ -8,36 +8,36 @@ $(".faqs-question-section").on("click", function (e) {
   }
 });
 
+$(".menu-bar").click(function () {
+  $(".hamburgerMenu").toggleClass("mobile-menu");
+});
+
 $(".doctor-card-section").owlCarousel({
-  loop: false,
+  loop: true,
   margin: 10,
   responsive: {
     0: {
       items: 1,
     },
-    600: {
+
+    670: {
       items: 2,
     },
-    1000: {
+    1450: {
       items: 3,
     },
   },
 });
 
 $(".owl-carousel").owlCarousel({
-  loop: false,
+  loop: true,
   margin: 10,
   responsive: {
     0: {
       items: 1,
     },
-    600: {
-      items: 2,
-    },
-    1000: {
+    1300: {
       items: 2,
     },
   },
 });
-
-
