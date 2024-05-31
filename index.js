@@ -1,3 +1,10 @@
+$(window).on('load', function() {
+  $('#loader').fadeOut('slow', function() {
+      $('#content').fadeIn('slow');
+  });
+});
+
+// FAQS code
 $(".faqs-question-section").on("click", function (e) {
   if (e.target.tagName === "H6" || e.target.tagName === "SPAN") {
     const h6 = e.target.closest("h6");
@@ -8,6 +15,7 @@ $(".faqs-question-section").on("click", function (e) {
   }
 });
 
+// mobile menu code
 $(".menu-bar").click(function () {
   $(".hamburgerMenu").toggleClass("mobile-menu");
 });
@@ -18,6 +26,7 @@ $(".hamburgerMenu").click(function (e) {
   );
 });
 
+// owl carousel code
 $(".doctor-card-section").owlCarousel({
   loop: true,
   margin: 10,
