@@ -12,6 +12,12 @@ $(".menu-bar").click(function () {
   $(".hamburgerMenu").toggleClass("mobile-menu");
 });
 
+$(".hamburgerMenu").click(function (e) {
+  e.target.parentElement.parentElement.parentElement.parentElement.parentElement.classList.toggle(
+    "mobile-menu"
+  );
+});
+
 $(".doctor-card-section").owlCarousel({
   loop: true,
   margin: 10,
