@@ -225,7 +225,7 @@ a:hover{
   display: block;
 }
 
-.menu-bar{
+.top-header .menu-bar{
   display: none;
   position: absolute;
 
@@ -309,11 +309,20 @@ font-size: 14px;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 450px){
   header .top-header{
     padding-left: 10px !important;
   }
+  .hamburger-contact-info-text p{
+    font-size: x-small;
+  }
+  .hamburger-contact-info-text h5{
+    font-size: x-small;
+  }
 }
+
+
+
 
 /* main nav section  */
 main .main-nav-options a{
